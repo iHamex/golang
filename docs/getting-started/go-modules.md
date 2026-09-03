@@ -95,7 +95,7 @@ go 1.22
 
 The `go.mod` file is the heart of your module. Here is a real-world example:
 
-```go
+```
 module github.com/user/webapp
 
 go 1.22
@@ -432,7 +432,7 @@ Here is a real-world module setup for a web API:
 
 === "Module Files"
 
-    ```go
+    ```
     // go.mod
     module github.com/user/webapp
 

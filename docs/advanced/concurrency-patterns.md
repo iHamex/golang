@@ -144,7 +144,6 @@ Pipelines chain stages where each stage transforms data and passes it forward.
 
     import (
         "fmt"
-        "strings"
     )
 
     func generate(nums ...int) <-chan int {

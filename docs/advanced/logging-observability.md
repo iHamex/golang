@@ -536,7 +536,6 @@ Production services need health check endpoints for load balancers and orchestra
     package main
 
     import (
-        "context"
         "encoding/json"
         "log"
         "net/http"

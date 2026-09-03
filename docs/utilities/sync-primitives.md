@@ -33,7 +33,6 @@ The `sync.Mutex` provides mutual exclusion locking to protect shared state from 
     import (
         "fmt"
         "sync"
-        "time"
     )
 
     // Counter with mutex protection

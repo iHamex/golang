@@ -44,7 +44,8 @@ The `context.Background` and `context.TODO` functions create empty contexts that
         fmt.Println("TODO context:", ctxTODO)
 
         // Check context properties
-        fmt.Println("Background deadline:", ctx.Deadline())
+        deadline, ok := ctx.Deadline()
+        fmt.Println("Background deadline:", deadline, "set:", ok)
         fmt.Println("Background done:", ctx.Done())
         fmt.Println("Background err:", ctx.Err())
         fmt.Println("Background value:", ctx.Value("key"))

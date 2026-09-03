@@ -624,7 +624,7 @@ Casbin is a powerful authorization library supporting multiple access control mo
         Role     UserRole
     }
 
-    func (u *UserWithRole) HasPermission(required RoleUserRole) bool {
+    func (u *UserWithRole) HasPermission(required UserRole) bool {
         return u.Role >= required
     }
 

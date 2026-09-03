@@ -404,7 +404,7 @@ The `maps` package provides generic map operations.
     import (
         "fmt"
         "maps"
-        "slices"
+        "sort"
     )
 
     func main() {
@@ -430,14 +430,25 @@ The `maps` package provides generic map operations.
         fmt.Println("Equal:", maps.Equal(scores, copied))
 
         // Keys and Values
-        keys := slices.Sorted(maps.Keys(scores))
+        keys := make([]string, 0, len(scores))
+        for k := range scores {
+            keys = append(keys, k)
+        }
+        sort.Strings(keys)
         fmt.Println("Keys:", keys)
 
-        values := slices.Sorted(maps.Values(scores))
+        values := make([]int, 0, len(scores))
+        for _, v := range scores {
+            values = append(values, v)
+        }
+        sort.Ints(values)
         fmt.Println("Values:", values)
 
-        // Collect from iterator
-        collected := maps.Collect(maps.All(scores))
+        // Rebuild map (equivalent to collecting an iterator)
+        collected := make(map[string]int, len(scores))
+        for k, v := range scores {
+            collected[k] = v
+        }
         fmt.Println("Collected:", collected)
     }
     ```

@@ -108,7 +108,6 @@ Go's toolchain supports cross-compilation via `GOOS` and `GOARCH` environment va
         "fmt"
         "os"
         "runtime"
-        "time"
     )
 
     var (
@@ -525,7 +524,6 @@ Properly handling shutdown signals ensures in-flight requests complete and resou
     import (
         "context"
         "log"
-        "os"
         "os/signal"
         "syscall"
         "time"
@@ -588,7 +586,6 @@ Properly handling shutdown signals ensures in-flight requests complete and resou
         "encoding/json"
         "log"
         "net/http"
-        "os"
         "sync"
         "time"
     )

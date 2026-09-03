@@ -35,10 +35,13 @@ Slices are dynamically-sized, flexible views into underlying arrays.
         // Slice literals
         fruits := []string{"apple", "banana", "cherry"}
         numbers := []int{1, 2, 3, 4, 5}
+        fmt.Println("Numbers:", numbers)
 
         // make: create slice with length and capacity
         zeros := make([]int, 5)          // [0 0 0 0 0]
         buffer := make([]byte, 0, 1024)  // empty, capacity 1024
+        fmt.Println("Zeros:", zeros)
+        fmt.Println("Buffer len:", len(buffer), "cap:", cap(buffer))
 
         // len and cap
         fmt.Println("Fruits:", fruits)
@@ -591,7 +594,7 @@ Go provides built-in constraints and allows defining custom ones for more specif
 === "The Explanation"
 
     - **`comparable`**: Built-in constraint for types that support `==` and `!=`
-    - **`constraints.Ordered`**: Types that support `<`, `>`, `<=`, `>=`
+    - **`cmp.Ordered`**: Types that support `<`, `>`, `<=`, `>=`
     - **Custom constraints**: Define interfaces with union types
     - **`~` operator**: Includes underlying types (e.g., `~int` matches `type MyInt int`)
     - **Generic data structures**: Create type-safe collections like Stack, Queue, Map
@@ -622,6 +625,7 @@ Build reusable algorithms and data structures with type safety.
     package main
 
     import (
+        "cmp"
         "fmt"
         "sort"
     )
@@ -634,14 +638,14 @@ Build reusable algorithms and data structures with type safety.
     }
 
     // Generic min/max functions
-    func Min[T constraints.Ordered](a, b T) T {
+    func Min[T cmp.Ordered](a, b T) T {
         if a < b {
             return a
         }
         return b
     }
 
-    func Max[T constraints.Ordered](a, b T) T {
+    func Max[T cmp.Ordered](a, b T) T {
         if a > b {
             return a
         }
@@ -649,7 +653,7 @@ Build reusable algorithms and data structures with type safety.
     }
 
     // Generic clamp function
-    func Clamp[T constraints.Ordered](value, min, max T) T {
+    func Clamp[T cmp.Ordered](value, min, max T) T {
         if value < min {
             return min
         }

@@ -364,7 +364,6 @@ String interning stores a single copy of each unique string, reducing memory usa
 
     import (
         "fmt"
-        "strings"
     )
 
     // Simple string interning implementation

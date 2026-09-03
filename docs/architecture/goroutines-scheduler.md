@@ -374,6 +374,7 @@ Each goroutine starts with a small stack (2 KB in Go 1.4+). When more space is n
 
     func recursive(depth int) {
         var buf [1024]byte // Use 1 KB per call
+        _ = buf
         if depth > 0 {
             recursive(depth - 1)
         } else {

@@ -875,7 +875,6 @@ Create custom I/O pipelines with `io.Pipe`.
     import (
         "fmt"
         "io"
-        "strings"
     )
 
     func main() {

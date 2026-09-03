@@ -296,7 +296,6 @@ Invoke methods on values at runtime using reflection.
     import (
         "fmt"
         "reflect"
-        "strings"
     )
 
     type Greeter struct {
@@ -503,7 +502,15 @@ Go 1.18+ generics provide type-safe alternatives to many reflection use cases.
 
         total := reflect.Zero(val.Type().Elem())
         for i := 0; i < val.Len(); i++ {
-            total = reflect.ValueOf(total.Interface()).Add(val.Index(i))
+            item := val.Index(i)
+            switch total.Kind() {
+            case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64:
+                total = reflect.ValueOf(total.Int() + item.Int()).Convert(total.Type())
+            case reflect.Float32, reflect.Float64:
+                total = reflect.ValueOf(total.Float() + item.Float()).Convert(total.Type())
+            default:
+                return nil, fmt.Errorf("unsupported element type: %s", total.Kind())
+            }
         }
 
         return total.Interface(), nil

@@ -238,7 +238,6 @@ Expose Go functions to C code via exported functions.
 
     import (
         "fmt"
-        "unsafe"
     )
 
     //export GoAdd

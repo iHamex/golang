@@ -94,8 +94,6 @@ Chain multiple middleware using a helper function.
         "fmt"
         "log"
         "net/http"
-        "strings"
-        "time"
     )
 
     type Middleware func(http.Handler) http.Handler
@@ -204,7 +202,7 @@ Comprehensive request/response logging.
             start := time.Now()
             rec := &responseRecorder{ResponseWriter: w, statusCode: http.StatusOK}
 
-            body, _ := io.ReadAll(r.Body)
+            _, _ = io.ReadAll(r.Body)
             r.Body.Close()
 
             next.ServeHTTP(rec, r)
@@ -351,7 +349,6 @@ Handle Cross-Origin Resource Sharing.
         "fmt"
         "log"
         "net/http"
-        "strings"
     )
 
     func corsMiddleware(next http.Handler) http.Handler {

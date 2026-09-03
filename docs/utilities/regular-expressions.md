@@ -218,7 +218,14 @@ The `ReplaceAllString` function replaces all occurrences of a pattern with repla
         fmt.Println("Function replacement:", result)
 
         // Replace first occurrence only
-        firstOnly := priceRegex.ReplaceAllString(text, "€XXX.XX", 1)
+        count := 0
+        firstOnly := priceRegex.ReplaceAllStringFunc(text, func(match string) string {
+            count++
+            if count == 1 {
+                return "€XXX.XX"
+            }
+            return match
+        })
         fmt.Println("First only:", firstOnly)
     }
     ```

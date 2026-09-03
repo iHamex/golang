@@ -483,6 +483,7 @@ Without synchronization, changes made by one goroutine may not be visible to ano
 
         wg.Wait()
         // unsafeVal might be 0 or 42 — no guarantee
+        fmt.Println("Unsafe value:", unsafeVal)
 
         // With atomic — SAFE
         var atomicVal int64

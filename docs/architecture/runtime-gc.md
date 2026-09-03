@@ -102,7 +102,6 @@ Go's GC is a concurrent, tri-color mark-and-sweep collector. It runs alongside t
         "fmt"
         "runtime"
         "runtime/debug"
-        "time"
     )
 
     func allocateMemory() []byte {
@@ -305,6 +304,7 @@ Before Go 1.19, the memory ballast technique allocated a large dummy object to r
         // Memory ballast: pre-allocate 100 MB to reduce GC frequency
         ballast := make([]byte, 100*1024*1024) // 100 MB
         defer func() { ballast = nil }()        // Release when done
+        _ = ballast                             // keep the ballast alive
 
         // Without ballast, GC triggers more frequently
         // With ballast, GC thinks heap is larger, so GOGC% is higher

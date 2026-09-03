@@ -597,7 +597,6 @@ Escape analysis determines whether variables are allocated on the stack or heap 
 
     import (
         "bytes"
-        "fmt"
         "strings"
         "testing"
     )

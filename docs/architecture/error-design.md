@@ -208,7 +208,7 @@ Sentinel errors are package-level error variables that represent specific, known
     }
 
     func main() {
-        data, err := readFile("nonexistent.txt")
+        _, err := readFile("nonexistent.txt")
         if err != nil {
             fmt.Printf("Error type: %T\n", err)
             fmt.Printf("Error value: %v\n", err)

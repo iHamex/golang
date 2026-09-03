@@ -656,7 +656,6 @@ OpenTelemetry provides vendor-neutral APIs for traces, metrics, and logs.
 
     import (
         "log"
-        "math"
         "time"
     )
 

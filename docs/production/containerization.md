@@ -392,6 +392,7 @@ Containers provide consistent, reproducible environments for Go applications. Bu
     package main
 
     import (
+        "context"
         "encoding/json"
         "net/http"
         "os"
@@ -426,7 +427,8 @@ Containers provide consistent, reproducible environments for Go applications. Bu
         signal.Notify(quit, syscall.SIGTERM, syscall.SIGINT)
         <-quit
 
-        ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+        ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+        defer cancel()
         srv.Shutdown(ctx)
     }
     ```

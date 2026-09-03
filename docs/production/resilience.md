@@ -474,6 +474,9 @@ Bulkheads isolate components so that a failure in one does not cascade to others
 
         active, rejected := dbBulkhead.Stats()
         fmt.Printf("DB Bulkhead: active=%d, rejected=%d\n", active, rejected)
+
+        apiActive, apiRejected := apiBulkhead.Stats()
+        fmt.Printf("API Bulkhead: active=%d, rejected=%d\n", apiActive, apiRejected)
     }
     ```
 
@@ -511,7 +514,6 @@ Bulkheads isolate components so that a failure in one does not cascade to others
 
     import (
         "context"
-        "errors"
         "fmt"
         "time"
     )

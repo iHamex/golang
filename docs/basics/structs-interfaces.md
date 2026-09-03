@@ -682,11 +682,11 @@ Go naturally supports SOLID principles through its type system and interface des
         return &UserRepository{users: make(map[int]string)}
     }
 
-    func (r *UserRepository) Save(id int, name string) {
+    func (r *UserRepository) SaveUser(id int, name string) {
         r.users[id] = name
     }
 
-    func (r *UserRepository) Find(id int) (string, bool) {
+    func (r *UserRepository) FindUser(id int) (string, bool) {
         name, ok := r.users[id]
         return name, ok
     }

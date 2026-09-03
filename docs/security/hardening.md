@@ -179,7 +179,7 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "net/http"
         "sync"
@@ -314,11 +314,12 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "net"
         "net/http"
         "strings"
+        "sync"
     )
 
     type IPFilter struct {
@@ -464,9 +465,12 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
+        "fmt"
         "log"
         "net/http"
+        "os"
+        "strings"
         "time"
     )
 
@@ -592,7 +596,7 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "os"
     )
@@ -716,7 +720,7 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "os/exec"
         "strings"
@@ -901,7 +905,7 @@ Security hardening involves configuring your application and infrastructure to m
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "os"
         "os/user"

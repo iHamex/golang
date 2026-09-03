@@ -436,7 +436,7 @@ Fan-out distributes work across multiple goroutines. Fan-in merges results from 
         }
     }
 
-    func fanIn(done <-chan struct{}, channels ...<-chan int) <-chan int {
+    func fanIn(done <-chan struct{}, channels ...chan int) <-chan int {
         var wg sync.WaitGroup
         merged := make(chan int)
 
@@ -467,7 +467,7 @@ Fan-out distributes work across multiple goroutines. Fan-in merges results from 
         done := make(chan struct{})
 
         // Fan-out: 3 workers
-        workerResults := make([]<-chan int, 3)
+        workerResults := make([]chan int, 3)
         var wg sync.WaitGroup
 
         for i := 0; i < 3; i++ {
@@ -487,7 +487,7 @@ Fan-out distributes work across multiple goroutines. Fan-in merges results from 
         go func() {
             wg.Wait()
             for _, ch := range workerResults {
-                close(ch.(chan int))
+                close(ch)
             }
         }()
 

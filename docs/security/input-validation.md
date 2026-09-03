@@ -438,7 +438,8 @@ The `go-playground/validator` package provides struct-level validation using tag
     ```go
     package main
 
-    (
+    import (
+        "fmt"
         "html"
         "html/template"
         "net/http"
@@ -723,7 +724,7 @@ The `go-playground/validator` package provides struct-level validation using tag
     ```go
     package main
 
-    (
+    import (
         "fmt"
         "io"
         "mime/multipart"
@@ -731,12 +732,13 @@ The `go-playground/validator` package provides struct-level validation using tag
         "os"
         "path/filepath"
         "strings"
+        "time"
     )
 
     type UploadConfig struct {
         MaxFileSize  int64
         AllowedTypes map[string]bool
-        AllowedExts  []string
+        AllowedExts  map[string]bool
         UploadDir    string
     }
 
@@ -749,8 +751,14 @@ The `go-playground/validator` package provides struct-level validation using tag
                 "image/gif":  true,
                 "application/pdf": true,
             },
-            AllowedExts: []string{".jpg", ".jpeg", ".png", ".gif", ".pdf"},
-            UploadDir:   "./uploads",
+            AllowedExts: map[string]bool{
+                ".jpg":  true,
+                ".jpeg": true,
+                ".png":  true,
+                ".gif":  true,
+                ".pdf":  true,
+            },
+            UploadDir: "./uploads",
         }
     }
 
@@ -802,7 +810,7 @@ The `go-playground/validator` package provides struct-level validation using tag
     }
 
     func SaveUpload(file multipart.File, header *multipart.FileHeader,
-        config UploadDir) (string, error) {
+        config UploadConfig) (string, error) {
 
         // Generate safe filename
         ext := filepath.Ext(header.Filename)
@@ -923,6 +931,8 @@ The `go-playground/validator` package provides struct-level validation using tag
 
         return n, err
     }
+
+    func (lr *LimitedReader) Close() error { return nil }
 
     func RequestSizeLimit(maxSize int64, next http.Handler) http.Handler {
         return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

@@ -113,7 +113,7 @@ Constants are compile-time values that cannot be changed after declaration.
 
         // Typed constants with iota (enumeration)
         const (
-            Sunday    iota // 0
+            Sunday = iota // 0
             Monday         // 1
             Tuesday        // 2
             Wednesday      // 3
@@ -404,6 +404,7 @@ func main() {
     // Fixed size is part of the type
     var arr3 [3]int
     var arr5 [5]int
+    fmt.Println("arr3 len:", len(arr3), "arr5 len:", len(arr5))
     // arr3 = arr5  // Type mismatch: [3]int vs [5]int
 }
 ```
@@ -429,6 +430,8 @@ Slices are dynamic, reference-type collections built on top of arrays. They are 
         // Slice with make
         s2 := make([]int, 5)       // len=5, cap=5
         s3 := make([]int, 0, 10)   // len=0, cap=10
+        fmt.Println("make s2:", s2, "len:", len(s2), "cap:", cap(s2))
+        fmt.Println("make s3:", s3, "len:", len(s3), "cap:", cap(s3))
 
         // Slice literal
         s4 := []int{1, 2, 3, 4, 5}
@@ -635,7 +638,6 @@ package main
 import (
     "fmt"
     "strconv"
-    "strings"
 )
 
 func main() {
@@ -723,10 +725,12 @@ func main() {
     // GOOD: Use short declaration inside functions
     name := "Go"
     version := 1.22
+    fmt.Printf("name=%s, version=%.2f\n", name, version)
 
     // GOOD: Use var when you need the zero value or explicit type
     var count int
     var message string
+    fmt.Println("count:", count, "message:", message)
 
     // GOOD: Use var for package-level variables (outside functions)
     // var globalConfig = loadConfig()

@@ -454,7 +454,6 @@ Build custom generators using Go's `text/template` package.
 
     import (
         "fmt"
-        "unsafe"
     )
 
     //go:linkname runtimeNano runtime.nanotime
