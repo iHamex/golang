@@ -1,0 +1,182 @@
+site_name: Go Book
+site_url: https://ihamex.github.io/golang/
+# Documentation directory
+docs_dir: docs
+
+# Repository
+repo_name: golang-docs
+
+# Theme Settings
+theme:
+  language: en
+  name: material
+  logo: media/logo.png
+  # favicon: media/favicon.png
+  palette:
+    - scheme: default
+      primary: 'white'
+      accent: 'cyan'
+  icon:
+    admonition:
+      go: octicons/rocket-16
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  features:
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.mermaid
+
+
+# CSS Settings
+extra_css:
+  - media/custom.css
+
+
+# JS Settings
+extra_javascript:
+  - media/custom.js
+
+
+# Extra Settings
+extra:
+  generator: false
+
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true 
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - sane_lists
+
+# Plugins
+plugins:
+  - search
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  
+  # Getting Started
+  - Getting Started:
+    - Setup & Installation: getting-started/setup-installation.md
+    - Your First Program: getting-started/first-program.md
+    - Go Modules & Dependencies: getting-started/go-modules.md
+    - Project Structure: getting-started/project-structure.md
+    - Basic Syntax & Types: getting-started/basic-syntax.md
+    - IDE Setup & Tooling: getting-started/ide-setup.md
+  
+  # Architecture
+  - Architecture:
+    - Concurrency Model: architecture/concurrency-model.md
+    - Goroutines & Scheduler: architecture/goroutines-scheduler.md
+    - Channels & Select: architecture/channels-select.md
+    - Memory Model: architecture/memory-model.md
+    - Runtime & GC: architecture/runtime-gc.md
+    - Error Design Philosophy: architecture/error-design.md
+  
+  # The Basics
+  - The Basics:
+    - Functions & Methods: basics/functions-methods.md
+    - Structs & Interfaces: basics/structs-interfaces.md
+    - Collections & Generics: basics/collections-generics.md
+    - Error Handling: basics/error-handling.md
+    - HTTP Servers: basics/http-servers.md
+    - HTTP Clients: basics/http-clients.md
+    - JSON & Encoding: basics/json-encoding.md
+    - File & IO: basics/file-io.md
+    - Testing: basics/testing.md
+    - CLI Applications: basics/cli-applications.md
+  
+  # Advanced Topics
+  - Advanced Topics:
+    - Advanced Concurrency: advanced/concurrency-patterns.md
+    - Middleware & Hooks: advanced/middleware-hooks.md
+    - Database & SQL: advanced/database-sql.md
+    - ORM & GORM: advanced/orm-gorm.md
+    - Caching: advanced/caching.md
+    - Logging & Observability: advanced/logging-observability.md
+    - Configuration & Viper: advanced/configuration-viper.md
+    - Code Generation: advanced/code-generation.md
+    - Reflection & Metaprogramming: advanced/reflection.md
+    - Unsafe & CGo: advanced/unsafe-cgo.md
+  
+  # Security
+  - Security:
+    - Security Overview: security/overview.md
+    - Authentication & JWT: security/authentication-jwt.md
+    - Authorization & RBAC: security/authorization-rbac.md
+    - HTTPS & TLS: security/https-tls.md
+    - Input Validation: security/input-validation.md
+    - Security Hardening: security/hardening.md
+  
+  # Utilities
+  - Utilities:
+    - String Processing: utilities/string-processing.md
+    - Time & Dates: utilities/time-dates.md
+    - Regular Expressions: utilities/regular-expressions.md
+    - Context & Cancellation: utilities/context-cancellation.md
+    - Sync Primitives: utilities/sync-primitives.md
+    - Sort & Collections: utilities/sort-collections.md
+    - Embed & FS: utilities/embed-fs.md
+    - Hashing & Crypto: utilities/hashing-crypto.md
+  
+  # Production
+  - Production:
+    - Deployment: production/deployment.md
+    - Performance: production/performance.md
+    - Observability: production/observability.md
+    - Resilience: production/resilience.md
+    - Containerization: production/containerization.md
+    - CI/CD: production/ci-cd.md
+
+# Copyright Text
+copyright: © 2026 Hamed Okhovvat
+
