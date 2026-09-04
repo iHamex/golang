@@ -2,214 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ihamex.github.io/golang/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/caching/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/code-generation/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/concurrency-patterns/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/configuration-viper/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/database-sql/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/logging-observability/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/middleware-hooks/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/orm-gorm/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/reflection/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/advanced/unsafe-cgo/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/channels-select/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/concurrency-model/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/error-design/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/goroutines-scheduler/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/memory-model/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/architecture/runtime-gc/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/cli-applications/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/collections-generics/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/error-handling/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/file-io/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/functions-methods/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/http-clients/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/http-servers/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/json-encoding/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/structs-interfaces/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/basics/testing/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/basic-syntax/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/first-program/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/go-modules/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/ide-setup/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/project-structure/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/getting-started/setup-installation/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/ci-cd/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/containerization/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/deployment/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/observability/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/performance/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/production/resilience/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/authentication-jwt/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/authorization-rbac/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/hardening/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/https-tls/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/input-validation/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/security/overview/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/context-cancellation/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/embed-fs/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/hashing-crypto/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/regular-expressions/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/sort-collections/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/string-processing/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/sync-primitives/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
     <url>
          <loc>https://ihamex.github.io/golang/utilities/time-dates/</loc>
-         <lastmod>2026-09-03</lastmod>
+         <lastmod>2026-09-04</lastmod>
     </url>
 </urlset>
